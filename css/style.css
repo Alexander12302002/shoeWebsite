@@ -126,3 +126,64 @@ header::after{
     z-index: 0;
 }
 
+.body{
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 2em;
+    height: 75%;
+    position: relative;
+    z-index: 1;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+.body h1{
+    font-size: 3.5em;
+    margin: 0.5em 0;
+}
+
+.body h4{
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.body p{
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 0.9em;
+    margin: 2em 0 3em 0;
+    max-width: 45em;
+}
+
+.btn{
+    padding: 0.7em 1.5em;
+    background: #a3be52;
+    border-radius: 3em;
+    letter-spacing: 1px;
+    font-size: 1em;
+    transition: 0.35;
+}
+
+.btn:hover{
+    background: #6e9623;
+}
+
+.body > div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.body .fas{
+    color: #fcc024;
+}
+
+.body img {
+    width: 45em;
+    transform: rotate(-25deg);
+    filter: drop-shadow(30px 45px 40px #161616);
+}
+
